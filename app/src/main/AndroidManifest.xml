@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    AndroidManifest.xml - Konfigurasi utama aplikasi Android.
+    Mendefinisikan:
+    - Package name dan SDK versions
+    - Semua Activity yang ada dalam aplikasi
+    - Permission yang diperlukan
+    - Konfigurasi tema dan ikon
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darkui.movielist">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DarkFlix">
+
+        <!--
+            SplashActivity sebagai LAUNCHER activity.
+            android.intent.action.MAIN + android.intent.category.LAUNCHER = pintu masuk app.
+            Theme khusus splash (fullscreen).
+        -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.DarkFlix.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+            MainActivity: Activity utama dengan daftar film.
+            exported=false karena hanya dipanggil internal dari SplashActivity.
+        -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

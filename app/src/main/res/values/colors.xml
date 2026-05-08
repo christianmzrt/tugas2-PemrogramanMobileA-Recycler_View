@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors.xml - Palet warna aplikasi DarkFlix.
+    Semua warna diorganisir berdasarkan fungsi untuk konsistensi desain.
+    
+    PALET WARNA DARK MODERN UI:
+    ┌─────────────────────────────────────────────────────────────┐
+    │  Background Layer:  #0A0A0F (Hitam kebiruan - terdalam)     │
+    │  Surface Layer:     #0D0D14 (AppBar/Nav)                    │
+    │  Card Layer:        #12121C (Card background)               │
+    │  Border Layer:      #1E1E2E (Divider/stroke)                │
+    │                                                             │
+    │  Teks Primer:       #F1F1F5 (Hampir putih)                  │
+    │  Teks Sekunder:     #6B7280 (Abu medium)                    │
+    │  Teks Tersier:      #3D3D55 (Abu gelap)                     │
+    │                                                             │
+    │  Aksen Cyan:        #00D4FF (Neon utama)                    │
+    │  Aksen Ungu:        #7B68EE (Secondary accent)              │
+    │  Aksen Oranye:      #FF6B35 (Warning/highlight)             │
+    └─────────────────────────────────────────────────────────────┘
+-->
+<resources>
+
+    <!-- === BACKGROUND LAYERS === -->
+    <color name="bg_deepest">#0A0A0F</color>       <!-- Layer paling dalam -->
+    <color name="bg_appbar">#0D0D14</color>         <!-- AppBar/Toolbar -->
+    <color name="bg_card">#12121C</color>           <!-- Card background -->
+    <color name="bg_elevated">#16162A</color>       <!-- Surface sedikit lebih terang -->
+
+    <!-- === BORDER & DIVIDER === -->
+    <color name="border_subtle">#1E1E2E</color>     <!-- Garis tipis antar elemen -->
+    <color name="border_medium">#252538</color>     <!-- Garis sedikit lebih terang -->
+
+    <!-- === TEKS === -->
+    <color name="text_primary">#F1F1F5</color>      <!-- Judul, teks utama -->
+    <color name="text_secondary">#6B7280</color>    <!-- Deskripsi, subtitle -->
+    <color name="text_tertiary">#3D3D55</color>     <!-- Placeholder, info minor -->
+    <color name="text_disabled">#2A2A3E</color>     <!-- Elemen nonaktif -->
+
+    <!-- === AKSEN UTAMA === -->
+    <color name="accent_cyan">#00D4FF</color>       <!-- Primary neon - rating, FAB -->
+    <color name="accent_cyan_dim">#0099BB</color>   <!-- Varian lebih gelap -->
+    <color name="accent_purple">#7B68EE</color>     <!-- Secondary accent -->
+    <color name="accent_gold">#D4A853</color>       <!-- Gold untuk rating tinggi -->
+
+    <!-- === AKSEN PER GENRE (digunakan di accent bar) === -->
+    <color name="accent_scifi">#00D4FF</color>      <!-- Sci-Fi - Cyan neon -->
+    <color name="accent_action">#FF4081</color>     <!-- Action - Pink -->
+    <color name="accent_drama">#7B68EE</color>      <!-- Drama - Ungu -->
+    <color name="accent_thriller">#FF6B35</color>   <!-- Thriller - Oranye -->
+    <color name="accent_horror">#FF5252</color>     <!-- Horror - Merah -->
+    <color name="accent_comedy">#FFD740</color>     <!-- Comedy - Kuning -->
+
+    <!-- === STATUS === -->
+    <color name="status_success">#69F0AE</color>    <!-- Hijau neon -->
+    <color name="status_error">#FF5252</color>      <!-- Merah -->
+    <color name="status_warning">#FFD740</color>    <!-- Kuning -->
+
+    <!-- === TRANSPARAN === -->
+    <color name="overlay_light">#40FFFFFF</color>   <!-- Ripple effect -->
+    <color name="overlay_dark">#80000000</color>    <!-- Scrim -->
+    <color name="transparent">#00000000</color>
+
+    <!-- Warna sistem yang diperlukan -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

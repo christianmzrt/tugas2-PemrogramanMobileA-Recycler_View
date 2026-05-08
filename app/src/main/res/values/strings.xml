@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UNUDHub</string>
+    <string name="toolbar_title">UNUDHub</string>
+    <string name="toolbar_subtitle">Your Academic Universe</string>
+    <string name="fab_scroll_top">Scroll ke atas</string>
+    <string name="loading">Memuat mata kuliah...</string>
+    <string name="film_count">8 COURSES</string>
+    <string name="rating_label">SKS: </string>
+    <string name="year_label">Semester: </string>
+
+    <!-- Identitas Mahasiswa -->
+    <string name="user_name">Richard Christian Mozart Diazoni</string>
+    <string name="user_nim">2405551019</string>
+    <string name="user_class">Pemrograman Mobile A</string>
+</resources>

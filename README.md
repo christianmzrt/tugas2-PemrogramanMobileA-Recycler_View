@@ -17,32 +17,43 @@ Aplikasi Android dengan tampilan **Dark Modern UI** yang menampilkan daftar mata
 ## Struktur Project
 
 ```
-UNUDHub/
-├── app/
-│   ├── src/main/
-│   │   ├── java/com/darkui/movielist/
-│   │   │   ├── model/
-│   │   │   │   └── Movie.kt              ← Data class (digunakan untuk Mata Kuliah)
-│   │   │   ├── adapter/
-│   │   │   │   └── MovieAdapter.kt       ← RecyclerView Adapter + ViewHolder
-│   │   │   ├── SplashActivity.kt         ← Layar pembuka dengan identitas
-│   │   │   └── MainActivity.kt           ← Activity utama (Daftar Matkul)
-│   │   ├── res/
-│   │   │   ├── layout/
-│   │   │   │   ├── activity_splash.xml   ← Layout splash (Logo + Identitas)
-│   │   │   │   ├── activity_main.xml     ← Layout utama (RecyclerView)
-│   │   │   │   └── item_movie.xml        ← Layout satu item card matkul
-│   │   │   ├── values/
-│   │   │   │   ├── colors.xml            ← Palet warna dark modern
-│   │   │   │   ├── strings.xml           ← String resources & data identitas
-│   │   │   │   └── themes.xml            ← Dark tema Material3
-│   │   │   └── drawable/
-│   │   │       ├── splash_glow.xml       ← Efek glow radial
-│   │   │       └── ic_launcher_...       ← Adaptive Icon 
-│   │   └── AndroidManifest.xml
-│   └── build.gradle
-├── build.gradle
+app/
+├── manifests/
+│   └── AndroidManifest.xml
+├── kotlin+java/
+│   └── com.darkui.movielist/
+│       ├── adapter/
+│       │   └── MovieAdapter.kt           ← RecyclerView Adapter + ViewHolder
+│       ├── model/
+│       │   └── Movie.kt                  ← Data class (digunakan untuk Mata Kuliah)
+│       ├── MainActivity.kt               ← Activity utama (Daftar Matkul)
+│       └── SplashActivity.kt             ← Layar pembuka dengan identitas
+└── res/
+├── drawable/
+│   ├── emoji_bg.xml                  ← Background emoji (variant 1)
+│   ├── emoji_bg1.xml                 ← Background emoji (variant 2)
+│   ├── ic_launcher_background.xml    ← Background adaptive icon
+│   ├── ic_launcher_foreground.xml    ← Foreground adaptive icon
+│   └── splash_glow.xml               ← Efek glow radial splash screen
+├── layout/
+│   ├── activity_main.xml             ← Layout utama (RecyclerView)
+│   ├── activity_splash.xml           ← Layout splash (Logo 🎓 + Identitas)
+│   └── item_movie.xml                ← Layout satu item card matkul
+├── mipmap/
+│   ├── ic_launcher.xml               ← Adaptive icon (anydpi-v26)
+│   └── ic_launcher_round.xml         ← Adaptive icon bulat (anydpi-v26)
+└── values/
+├── colors.xml                    ← Palet warna dark modern
+├── strings.xml                   ← String resources & data identitas
+└── themes.xml                    ← Dark tema Material3
+Gradle Scripts/
+├── build.gradle (Project: AndroidProject)
+├── build.gradle (Module: app)
+├── gradle.properties
+├── gradle-wrapper.properties
+├── local.properties
 └── settings.gradle
+
 ```
 ---
 
